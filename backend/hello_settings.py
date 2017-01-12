@@ -5,7 +5,7 @@ import os, json
 PROJECT_PATH = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
 BACKEND_PATH = os.path.join(PROJECT_PATH, 'backend')
 print 'PROJECT_PATH: {}'.format(PROJECT_PATH)
-
+print 'BACKEND_PATH: {}'.format(BACKEND_PATH)
 
 # secrets dict
 SECRETS_PATH = os.path.join(BACKEND_PATH, 'devops/secret_files/secret.json')

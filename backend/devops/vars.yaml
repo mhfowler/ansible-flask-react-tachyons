@@ -1,5 +1,5 @@
 app_name: hello_webapp
-repo_url: git@github.com:successkit/SuccessKit.git
+repo_url: git@github.com:mhfowler/ansible-flask-react-tachyons.git
 repo_remote: origin
 repo_branch: master
 src_dir: /srv/hello_webapp

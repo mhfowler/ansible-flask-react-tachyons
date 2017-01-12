@@ -39,8 +39,8 @@
     - name: Copy secret.json file
       copy: src=secret_files/secret.json dest={{backend_dir}}/devops/secret_files/secret.json
 
-    - name: make backend_dir writeable by webgroup
-      action: file path={{backend_dir}} mode=u=rwX,g=rwX,o=X recurse=yes group=webgroup
+    - name: make src_dir writeable by webgroup
+      action: file path={{src_dir}} mode=u=rwX,g=rwX,o=X recurse=yes group=webgroup
 
     - name: make log_dir writeable by webgroup
       action: file path={{log_dir}} mode=u=rwX,g=rwX,o=X recurse=yes group=webgroup
