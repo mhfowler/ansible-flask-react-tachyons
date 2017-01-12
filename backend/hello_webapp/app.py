@@ -34,22 +34,12 @@ hello_helpers = get_hello_helpers_blueprint(db=db, template_dir=TEMPLATE_DIR)
 app.register_blueprint(hello_helpers)
 
 
-@app.route("/hello")
+@app.route("/api/hello")
 def hello_page():
     return render_template("hello.html")
 
 
-@app.route("/")
-def react_index_page():
-    react_bundle_url = '/static/react_build/bundle.js'
-    # if we're running in the LOCAL environment, load the React bundle from port 3000
-    # to enable hot reloading
-    if LOCAL:
-        react_bundle_url = 'http://localhost:3000/static/react_build/bundle.js'
-    return render_template("react_index.html", react_bundle_url=react_bundle_url)
-
-
-@app.route('/static/<path:path>')
+@app.route('/api/static/<path:path>')
 def send_static(path):
     """
     for local static serving

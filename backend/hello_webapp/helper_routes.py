@@ -11,14 +11,14 @@ def get_hello_helpers_blueprint(db, template_dir):
     # blueprint for these routes
     hello_helpers = Blueprint('hello_helpers', __name__, template_folder=template_dir)
 
-    @hello_helpers.route('/error/')
+    @hello_helpers.route('/api/error/')
     def flask_force_error():
         """
         this helper page forces an error, for testing error logging
         """
         raise Exception('forced 500 error')
 
-    @hello_helpers.route('/slack/')
+    @hello_helpers.route('/api/slack/')
     def flask_slack_test():
         """
         this helper page for testing if slack is working
@@ -26,7 +26,7 @@ def get_hello_helpers_blueprint(db, template_dir):
         _log('@channel: slack is working?')
         return 'slack test'
 
-    @hello_helpers.route('/test_db/')
+    @hello_helpers.route('/api/test_db/')
     def test_db_page():
         """
         this helper page confirms that the database is connected and working
