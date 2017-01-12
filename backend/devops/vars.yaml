@@ -5,9 +5,9 @@ repo_branch: master
 src_dir: /srv/hello_webapp
 backend_dir: /srv/hello_webapp/backend
 log_dir: /srv/log
-aws_key_name: successkit
-aws_security_group: webapp-security-group
+aws_key_name: maxhfowler_dec8
+aws_security_group: citigroup_apps
 aws_instance_name: aws_default
-aws_key_location: /Users/maxfowler/Dropbox/base/freelance/success_kit/ansible-flask-template/backend/devops/secret_files/successkit.pem
-aws_subnet: subnet-72cdbd5f
+aws_key_location: /Users/maxfowler/Desktop/offline/ec2/dec8/maxhfowler_dec8.pem
+aws_subnet: subnet-1b647733
 prod_url: http://52.91.169.141/
