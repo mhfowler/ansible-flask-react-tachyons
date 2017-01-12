@@ -9,6 +9,3 @@
 
 `./frontend/run.sh`
 
-# ansible-flask-react-tachyons
-# ansible-flask-react-tachyons
-# ansible-flask-react-tachyons
