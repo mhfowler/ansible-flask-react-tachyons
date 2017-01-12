@@ -1,1 +1,1 @@
-alias staging="ssh ubuntu@ec2-54-210-70-125.compute-1.amazonaws.com -i backend/devops/secret_files/successkit.pem"
+alias staging="ssh ubuntu@<aws_public_url> -i backend/devops/secret_files/aws.pem"
